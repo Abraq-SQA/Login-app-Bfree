@@ -49,6 +49,9 @@ app.use(
   })
 );
 
+app.get('/', (req, res) => {
+  res.send('Shopping cart API is successful');
+});
 app.use('/api/v1/auth', authRouter);
 app.use('/api/v1/users', userRouter);
 app.use('/api/v1/products', productRouter);
